@@ -1,6 +1,7 @@
-// SPDX-License-Identifier:MIX
-pragma solidity »=.7.0 -0.9.0;
-contract ExanpleModifler{
+//SPDX-License-Identifier: MIT
+pragma solidity ^0.8.17;
+
+contract ExanpleModifier{
   address public owner;
   uint public account;
   
