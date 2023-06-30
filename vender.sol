@@ -55,4 +55,10 @@ contract Vendor is Ownable {
     (bool sent,) = msg.sender.call{value: address(this).balance}("");
     require(sent, "Failed to send user balance back to the owner");
   }
+  /**
+  * @notice check balance of eth in this contract
+  */
+  function getBalance() external view returns (uint256) {
+      return address(this).balance;
+  }
 }
